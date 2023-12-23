@@ -7,7 +7,7 @@ random.shuffle(lst)
 data = pd.DataFrame({'whoAmI': lst})
 data.head()
 
-# Ищем ункальные значения
+# Ищем уникальные значения
 col = data['whoAmI'].unique()   # ['robot' 'human']
 # Создаем новый датафрейм
 datasec = pd.DataFrame(0, index = data.index, columns = col)    # 2 колонки, значения только "0"
