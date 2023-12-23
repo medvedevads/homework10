@@ -6,7 +6,6 @@ lst += ['human'] * 10
 random.shuffle(lst)
 data = pd.DataFrame({'whoAmI': lst})
 data.head()
-pd.get_dummies(data['whoAmI'])
 
 # Ищем ункальные значения
 col = data['whoAmI'].unique()   # ['robot' 'human']
